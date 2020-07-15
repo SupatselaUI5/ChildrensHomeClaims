@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog>
+		<beginButton>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</beginButton>
+		<endButton>
+			<Button text="Save" press="onAddChildrenItem" type="Accept"/>
+		</endButton>
+		<content>
+<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
+    <sap.ui.layout.form:content>
+        <core:Title text="Committed Children" icon="sap-icon://account"/>
+        <Label text="Surname &amp; Initials/ File Number"/>
+        <Input width="100%" id="ccSurname"/><Label text="Date of Birth/ ID Number"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%" id="ccDoB"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Date Admitted" width="100%"/>
+        <DatePicker xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" id="ccDoA" displayFormat="dd-MM-YYYY"/>
+        <Label text="Age" width="100%"/>
+        <Input width="100%"/>
+        <Label text="Gender" width="100%"/>
+        <ComboBox xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Male" id="item3"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Female" id="item4"/>
+                </items>
+            
+        </ComboBox>
+        <Label text="Race" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Black"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="White"/>
+                <core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Coloured"/>
+                <core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Asian"/>
+                </items>
+            
+        </ComboBox>
+        <Label text="Disabled" width="100%"/>
+        <ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="No" id="item3_copy"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Yes" id="item4_copy"/>
+                </items>
+            
+        </ComboBox>
+        <Label text="Specify Disability" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        <CheckBox xmlns="sap.m" text="Committed" selected="false"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Place of Safety" selected="false" wrapping="true"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Specialized Service" selected="false" wrapping="true"/>
+        <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Type of Specialized Service" width="100%"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Admissions" width="100%"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="New Admission" selected="false" wrapping="true"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Indicate if Transferred from Place of Safety" selected="false" wrapping="true"/>
+        <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Date of Exit" width="100%"/>
+        <DatePicker xmlns="sap.m" displayFormat="dd-MM-YYYY"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Maturity Age" selected="false" wrapping="true"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Reunified with Family" selected="false" wrapping="true"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Absconded" selected="false" wrapping="true"/>
+        <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Foster Care" selected="false" wrapping="true"/>
+        <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Other (Specify)" width="100%" id="label2_copy4"/>
+        <Input xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" width="100%"/>
+        </sap.ui.layout.form:content>
+</sap.ui.layout.form:SimpleForm>
+</content>
+</Dialog>
+</core:FragmentDefinition>

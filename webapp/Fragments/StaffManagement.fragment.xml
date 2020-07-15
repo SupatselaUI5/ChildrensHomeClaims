@@ -1,0 +1,70 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog>
+		<beginButton>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</beginButton>
+		<endButton>
+			<Button text="Save" press="onAddResourceItem" type="Accept"/>
+		</endButton>
+		<content>
+			<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
+				<sap.ui.layout.form:content>
+					<core:Title text="Summary of Permanent Staff Breakdown" icon="sap-icon://company-view"/>
+					<Label text="Surname &amp; Initials/ File Number"/>
+					<Input width="100%" id="sfSurname"/>
+					<Label text="ID Number" id="label6"/>
+					<Input width="100%" id="sfID"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Gender" id="label6_copy"/>
+					<ComboBox xmlns="sap.m" id="sfGender">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Male" id="item24"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Female" id="item25"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Race" id="label6_copy2"/>
+					<ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Black" id="item24_copy"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="White" id="item25_copy"/>
+							<core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Coloured"
+								id="item25_copy2"/>
+							<core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Asian"
+								id="item25_copy3"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Disabled" id="label6_copy3"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="No" id="item70"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Yes" id="item71"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Description of Disability"
+						id="label6_copy4"/>
+					<Input width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Designation" id="label6_copy5"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Training Received" id="label6_copy6"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes" id="item174"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No" id="item175"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Specify Training Received"
+						id="label6_copy7"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Subsidized" id="label6_copy8"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes" id="item312"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No" id="item313"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Gross Monthly Salary" id="label6_copy9"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+				</sap.ui.layout.form:content>
+			</sap.ui.layout.form:SimpleForm>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>
