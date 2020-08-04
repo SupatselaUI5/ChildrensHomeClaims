@@ -51,6 +51,7 @@
         <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Transferred from Place of Safety" selected="false" wrapping="true"/>
         <Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Date of Exit"/>
         <DatePicker xmlns="sap.m" displayFormat="dd-MM-YYYY"/>
+        <Label xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Reason for Exit" width="100%"/>
         <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Court Order" selected="false" wrapping="true"/>
         <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Reunified with Family" selected="false" wrapping="true"/>
         <CheckBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Absconded" selected="false" wrapping="true"/>
